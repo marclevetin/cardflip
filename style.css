@@ -33,12 +33,14 @@ figure {
 }
 
 #card .front {
-  background: red;
+  background: #999999;
   text-align: center;
 }
 #card .back {
-  background: blue;
+  background: #999999;
   overflow: scroll;
+  -ms-transform: rotateY( 180deg ); /* IE 9 */
+  -webkit-transform: rotateY( 180deg ); /* Chrome, Safari, Opera */
   transform: rotateY( 180deg );
 }
 
@@ -49,7 +51,11 @@ figure {
 .content {
   margin: 5px;
   padding: 5px;
-  background: white;
+  background: #F5F5F5;
   border: 1px solid black;
-  min-height: 90%;
+  min-height: 340px;
+}
+
+.strong {
+  font-weight: 800;
 }
