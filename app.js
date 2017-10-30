@@ -7,3 +7,13 @@ function flipCard() {
     thisDiv.className = "";
   }
 }
+
+function flipToDetails() {
+  let thisDiv = document.getElementById('card')
+  thisDiv.className = "flipped";
+}
+
+function flipToCover() {
+  let thisDiv = document.getElementById('card')
+  thisDiv.className = "";
+}
