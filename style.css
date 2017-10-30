@@ -19,8 +19,11 @@ figure {
   width: 100%;
   height: 100%;
   position: absolute;
-  transform-style: preserve-3d;
+  -ms-transform: transform 1s; /* IE 9 */
+  -webkit-transition: transform 1s; /* Chrome, Safari, Opera */
+  -webkit-transform-style: preserve-3d; /* Chrome, Safari, Opera */
   transition: transform 1s;
+  transform-style: preserve-3d;
 }
 
 #card figure {
@@ -29,6 +32,7 @@ figure {
   position: absolute;
   width: 100%;
   height: 100%;
+  -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
   backface-visibility: hidden;
 }
 
@@ -45,6 +49,8 @@ figure {
 }
 
 #card.flipped {
+  -ms-transform: rotateY( 180deg );
+  -webkit-transform: rotateY( 180deg );
   transform: rotateY( 180deg );
 }
 
