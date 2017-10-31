@@ -1,3 +1,25 @@
+h1, h2, h3, h4, h5, h6 , .strong {
+  font-family: 'Bitter', serif;
+}
+
+p, a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: #808080;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #808080;
+}
+
+a:hover {
+  color: #808080;
+}
+
 section {
   display: block;
 }
@@ -42,7 +64,7 @@ figure {
 }
 #card .back {
   background: #999999;
-  overflow: scroll;
+  overflow-y: scroll;
   -ms-transform: rotateY( 180deg ); /* IE 9 */
   -webkit-transform: rotateY( 180deg ); /* Chrome, Safari, Opera */
   transform: rotateY( 180deg );
@@ -64,4 +86,15 @@ figure {
 
 .strong {
   font-weight: 800;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
