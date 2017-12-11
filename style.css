@@ -28,6 +28,11 @@ figure {
   margin: 0;
 }
 
+#details {
+  text-align: right;
+  padding-right: 20px;
+}
+
 .container {
   width: 362px;
   height: 362px;
@@ -46,6 +51,10 @@ figure {
   -webkit-transform-style: preserve-3d; /* Chrome, Safari, Opera */
   transition: transform 1s;
   transform-style: preserve-3d;
+}
+
+#links {
+  display: inline;
 }
 
 #card figure {

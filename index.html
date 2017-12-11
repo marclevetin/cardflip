@@ -8,9 +8,9 @@
     <script type="text/javascript" src="app.js"></script>
   </head>
   <body>
-    
+
     <section class="container">
-      <div id="card" onmouseenter="flipToDetails()" onmouseleave="flipToCover()" onclick="flipCard()">
+      <div id="card" onclick="flipCard()">
         <figure class="front">
           <div class="content">
             <h1>My Ukulele Info</h1>
@@ -18,6 +18,9 @@
               Ruby on Rails, ReactJS, AWS S3, Devise
             </p>
             <img src="myukeinfo.png" alt="screenshot of My Ukulele Info project"/>
+            <p id="details">
+              <a href="#">See details</a>
+            </p>
           </div>
         </figure>
         <figure class="back">
@@ -27,9 +30,10 @@
             <p>
               The app creates <a href="https://www.vbulletin.org/forum/misc.php?do=bbcode" target="_blank">vBulletin</a> markup that allows a user to easily update their signature and link back to their collection from the popular <a href="http://forum.ukuleleunderground.com/" target="_blank">Ukulele Underground Forums</a>.
             </p>
-            <p>
-              <a href="https://my-ukulele-info.herokuapp.com" target="_blank">Visit</a> | <a href="https://github.com/marclevetin/myukuleleinfo" target="_blank">Code</a>
+            <p id="links">
+              <a href="https://my-ukulele-info.herokuapp.com" target="_blank">Visit</a> | <a href="https://github.com/marclevetin/myukuleleinfo" target="_blank">Code</a> | <a href="#">Back</a>
             </p>
+
           </div>
         </figure>
       </div>
